@@ -1,0 +1,17 @@
+Input 1:
+
+Initial Power: 5
+Number of Skips: 5
+Number of Recharges: 3
+Enemy Powers: 0, 10, 2, 3, 9, 5, 6, 7, 8, 4, 7
+
+Output:- Abhimanyu cannot cross the Chakrvyuha.
+
+Input 2:
+
+Initial Power: 5
+Number of Skips: 5
+Number of Recharges: 3
+Enemy Powers: 0, 10, 2, 3, 9, 5, 6, 7, 8, 4, 1
+
+Output:- Abhimanyu cross the Chakrvyuha.
