@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
-#define long long int
+#define ll long long
 using namespace std;
 
-bool isPossible(int ind, int p, int s, int r, vector<int> &powers, bool isSkipPre, int initial_power){
+bool isPossible(ll ind, ll p, ll s, ll r, vector<ll> &powers, bool isSkipPre, ll initial_power){
     if (ind > 10) return true;
     if (ind == 3 || ind == 7){
         if (!isSkipPre) powers[ind] += powers[ind - 1] / 2;
@@ -21,12 +21,12 @@ bool isPossible(int ind, int p, int s, int r, vector<int> &powers, bool isSkipPr
 
 int main()
 {
-    int t;
+    ll t;
     cout << "Enter number of test case: " << endl;
     cin >> t;
     while (t--)
     {
-        int inti_pow, skip, recharge;
+        ll inti_pow, skip, recharge;
         cout << "Enter Abhimanyu Power: " << endl;
         cin >> inti_pow;
         cout<< "Enter Number of Skips: " << endl;
@@ -34,9 +34,9 @@ int main()
         cout << "Enter Number of Recharge: " << endl;
         cin >> recharge;
 
-        vector<int> powers(11);
+        vector<ll> powers(11);
         cout << "Enter the vector of enemy powers: " << endl;
-        for (int &x : powers)
+        for (ll &x : powers)
             cin >> x;
 
         bool can_win = isPossible(0, inti_pow, skip, recharge, powers, false, inti_pow);
